@@ -1,0 +1,18 @@
+:root {
+    --black-color: #1f1f1f;
+    --black-color-secondary: #313131;
+    --yellow-color: #FBCE51;
+    --white-color: #fff;
+    --blue-color: #3057A2;
+    --gray-color: #d6d6d6;
+    --gray-color-primary: #595653;
+    --gray-color-secondary: #d0d0d0;
+    --red-color: #F54932;
+
+    --font-primary: 'GolosText', sans-serif;
+    --font-secondary: 'Merriweather', sans-serif;
+}
+
+body {
+    margin: 20px;
+}
