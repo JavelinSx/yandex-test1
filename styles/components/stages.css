@@ -1,0 +1,129 @@
+.section-stages {
+    position: relative;
+    max-width: 340px;
+    margin-top: 80px;
+}
+
+.stages-grid {
+    display: none;
+}
+
+.stages-title {
+    font-family: var(--font-secondary);
+    font-size: 36px;
+    line-height: 110%;
+    margin-bottom: 12px;
+    max-width: 300px;
+}
+
+.stages-planner-img {
+    position: absolute;
+    top: 195px;
+    right: 1px;
+    z-index: 100;
+}
+
+.stages-note {
+    font-family: var(--font-primary);
+    color: var(--blue-color);
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 148px;
+}
+
+.stage-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-items: center;
+    gap: 16px;
+    height: 100%;
+    background-color: var(--brown-color);
+    background-image: url('../../assets/images/bg.webp');
+    background-blend-mode: color-burn;
+    padding: 24px 20px;
+    position: relative;
+}
+
+.stage-card__number {
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.stage-card__text {
+    font-family: var(--font-primary);
+    font-size: 18px;
+    line-height: 120%;
+    max-width: 450px;
+}
+
+.stage-card:nth-child(3) {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-end: 4;
+}
+
+.stage-card:nth-child(7) {
+    grid-column: span 2;
+}
+
+@media screen and (min-width: 1366px) {
+    .section-stages {
+        max-width: 1222px;
+        margin-top: 165px;
+    }
+
+    .stages-title {
+        font-size: 54px;
+        max-width: 705px;
+        margin-bottom: 46px;
+        line-height: 120%;
+    }
+
+    .stages-note {
+        max-width: 280px;
+        position: absolute;
+        top: 70px;
+        left: 297px;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .stage-card__text {
+        font-family: var(--font-primary);
+        font-size: 20px;
+        line-height: 120%;
+        font-weight: 500;
+    }
+
+    .stages-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 394px);
+        grid-template-rows: 112px 112px 136px;
+        gap: 20px;
+    }
+
+    .stages-planner-img {
+        width: 400px;
+        position: absolute;
+        top: auto;
+        bottom: 10px;
+        right: -70px;
+        transform: rotate(4deg);
+    }
+
+    .stage-card:nth-child(5) .stage-card__text {
+        width: 250px;
+    }
+
+    .slider {
+        display: none;
+    }
+}

@@ -4,6 +4,10 @@
 
 /* sections */
 @import url('./components/header.css');
-
+@import url('./components/intro.css');
+@import url('./components/stages.css');
+@import url('./components/footer.css');
 /* components */
 @import url('./components/button.css');
+@import url('./components/slider.css');
+@import url('./components/carousel.css');

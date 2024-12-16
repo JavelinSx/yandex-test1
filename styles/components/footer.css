@@ -1,0 +1,108 @@
+/* Running string styles */
+.footer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    /* Добавляем overflow: hidden здесь */
+}
+
+.footer-running-string {
+    position: relative;
+    bottom: auto;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 38px;
+    overflow: hidden;
+    background-color: var(--red-color);
+}
+
+.footer-running-string-wrapper {
+    display: flex;
+    white-space: nowrap;
+}
+
+.footer-running-string li {
+    flex-shrink: 0;
+    color: var(--white-color);
+    display: inline-block;
+    font-size: 16px;
+    line-height: 110%;
+    text-transform: uppercase;
+    font-family: var(--font-secondary);
+    padding-inline-start: 0;
+}
+
+.footer-running-string li:not(:last-child)::after {
+    content: "●";
+    color: var(--white-color);
+    margin: 0 12px;
+}
+
+.footer-info {
+    width: 100%;
+    height: 100%;
+    background-color: var(--brown-color);
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.footer-text {
+    font-size: 16px;
+    font-family: var(--font-primary);
+    line-height: 120%;
+    opacity: .6;
+}
+
+@media screen and (min-width: 1366px) {
+
+    .footer-info {
+        padding-left: 72px;
+        padding-right: 72px;
+    }
+
+    .footer-text {
+        display: block;
+        max-width: 1222px;
+    }
+
+    .footer-running-string {
+        height: 60px;
+    }
+
+    .footer-running-string li {
+        font-size: 22px;
+    }
+
+    .footer-running-string li:not(:last-child)::after {
+        content: "\2022";
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+    .footer-text {
+        display: block;
+        max-width: 1800px;
+    }
+
+    .footer-info {
+        padding-left: 72px;
+        padding-right: 72px;
+    }
+
+    .footer-running-string {
+        height: 60px;
+    }
+
+    .footer-running-string li {
+        font-size: 22px;
+    }
+
+    .footer-running-string li:not(:last-child)::after {
+        content: "\2022";
+    }
+}

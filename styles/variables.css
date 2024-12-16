@@ -8,11 +8,22 @@
     --gray-color-primary: #595653;
     --gray-color-secondary: #d0d0d0;
     --red-color: #F54932;
+    --brown-color: #E9DED4;
 
     --font-primary: 'GolosText', sans-serif;
     --font-secondary: 'Merriweather', sans-serif;
 }
 
 body {
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+footer {
+    overflow-x: hidden;
+    position: relative;
+    max-width: 100%;
 }
